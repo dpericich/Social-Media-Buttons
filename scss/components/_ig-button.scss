@@ -1,0 +1,45 @@
+.button-ig {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding: 3rem;
+  border: 1px solid $color-instagram-primary;
+  color: $color-instagram-primary;
+  border-radius: 25rem;
+
+  &:hover,
+  &:active {
+    color: $color-white-primary;
+    border: none;
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+
+  &__text {
+    position: relative;
+    z-index: 50;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      $color-instagram-primary,
+      $color-instagram-secondary
+    );
+    border-radius: 25rem;
+    transition: width 0.3s;
+  }
+
+  &:active::before,
+  &:hover::before {
+    width: 100%;
+  }
+}

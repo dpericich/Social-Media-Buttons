@@ -14,23 +14,125 @@ body {
 html {
   font-family: "Courier New", Courier, monospace; }
 
-.button {
-  display: inline-block;
+.button-fb {
+  position: relative;
+  margin-top: 2rem;
   font-size: 4rem;
+  padding: 3rem;
+  border: 1px solid #4267b2;
   color: #4267b2;
-  background-color: #fff;
-  border: 3px solid #4267b2;
-  border-radius: 5rem;
-  padding: 4rem 14rem; }
-  .button:active {
-    transform: translateY(4px); }
-  .button:active, .button:hover {
-    background: linear-gradient(to left, #0a2a69, #4267b2);
+  border-radius: 25rem; }
+  .button-fb:hover, .button-fb:active {
     color: #fff;
     border: none; }
+  .button-fb:active {
+    transform: translateY(3px); }
+  .button-fb__text {
+    position: relative;
+    z-index: 50; }
+  .button-fb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #4267b2, #0a2a69);
+    border-radius: 25rem;
+    transition: width 0.3s; }
+  .button-fb:active::before, .button-fb:hover::before {
+    width: 100%; }
+
+.button-yt {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding: 3rem;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  border-radius: 25rem; }
+  .button-yt:hover, .button-yt:active {
+    color: #fff;
+    border: none; }
+  .button-yt:active {
+    transform: translateY(3px); }
+  .button-yt__text {
+    position: relative;
+    z-index: 50; }
+  .button-yt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #ff0000, #b30909);
+    border-radius: 25rem;
+    transition: width 0.3s; }
+  .button-yt:active::before, .button-yt:hover::before {
+    width: 100%; }
+
+.button-ig {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding: 3rem;
+  border: 1px solid #f77737;
+  color: #f77737;
+  border-radius: 25rem; }
+  .button-ig:hover, .button-ig:active {
+    color: #fff;
+    border: none; }
+  .button-ig:active {
+    transform: translateY(3px); }
+  .button-ig__text {
+    position: relative;
+    z-index: 50; }
+  .button-ig::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #f77737, #833ab4);
+    border-radius: 25rem;
+    transition: width 0.3s; }
+  .button-ig:active::before, .button-ig:hover::before {
+    width: 100%; }
+
+.button-sp {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding: 3rem;
+  border: 1px solid #1db954;
+  color: #1db954;
+  border-radius: 25rem; }
+  .button-sp:hover, .button-sp:active {
+    color: #fff;
+    border: none; }
+  .button-sp:active {
+    transform: translateY(3px); }
+  .button-sp__text {
+    position: relative;
+    z-index: 50; }
+  .button-sp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #1db954, #039235);
+    border-radius: 25rem;
+    transition: width 0.3s; }
+  .button-sp:active::before, .button-sp:hover::before {
+    width: 100%; }
 
 .button-container {
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  width: 40%; }
 
 .main-head {
   font-size: 8rem; }

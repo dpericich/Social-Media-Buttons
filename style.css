@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  text-align: center; }
+
+html {
+  font-family: "Courier New", Courier, monospace; }
+
+.button {
+  display: inline-block;
+  font-size: 4rem;
+  color: #4267b2;
+  background-color: #fff;
+  border: 3px solid #4267b2;
+  border-radius: 5rem;
+  padding: 4rem 14rem; }
+  .button:active {
+    transform: translateY(4px); }
+  .button:active, .button:hover {
+    background: linear-gradient(to left, #0a2a69, #4267b2);
+    color: #fff;
+    border: none; }
+
+.button-container {
+  margin: 3rem auto; }
+
+.main-head {
+  font-size: 8rem; }

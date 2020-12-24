@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  font-size: 4rem;
+  color: $color-facebook-primary;
+  background-color: $color-white-primary;
+  border: 3px solid $color-facebook-primary;
+  border-radius: 5rem;
+  padding: 4rem 14rem;
+
+  &:active {
+    transform: translateY(4px);
+  }
+
+  &:active,
+  &:hover {
+    background: linear-gradient(
+      to left,
+      $color-facebook-secondary,
+      $color-facebook-primary
+    );
+    color: $color-white-primary;
+    border: none;
+  }
+}
